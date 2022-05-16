@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.button {
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  background: gold;
+  border: none;
+  margin-top: 10px;
+}
+
+.up-to-top{
+  position: fixed;
+  cursor: pointer;
+  bottom: 30px;
+  left: 90%;
+  transform: translateX(-50%);
+  animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  0% {transform: translateY(0)}
+  50% {transform: translateY(-10px)}
+  100% {transform: translateY(0)}
+}
